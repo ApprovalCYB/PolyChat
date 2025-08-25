@@ -1,0 +1,50 @@
+header {
+    background: transparent;
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 32px;
+    border-radius: 32px;
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+    padding-left: 32px;
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+}
+
+.right-header button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    padding: 8px 32px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-right: 32px;
+    transition: background 0.3s ease;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+}
+
+header .profile-dropdown {
+    top: 100%;
+    position: absolute;
+    right: 0;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+

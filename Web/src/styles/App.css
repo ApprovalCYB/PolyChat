@@ -1,0 +1,44 @@
+:root {
+  --bg: #000000;
+  --bg-grad-1: #000000;
+  --bg-grad-2: #0b0b0f;
+  --card: #12182a;
+  --muted: #7f8ea3;
+  --text: #e6edf7;
+  --primary: #6aa5ff;
+  --accent: #9d6cff;
+  --success: #1bc59b;
+  --danger: #ff5e7e;
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  background: var(--bg) url("../assets/batthern.png") repeat;
+  color: var(--text);
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: url("../assets/batthern.png") repeat;
+  animation: moveStars 100s linear infinite;
+  z-index: -1;
+  opacity: 1;
+  pointer-events: none;
+}
+
+@keyframes moveStars {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(-500px, -500px);
+  }
+}
