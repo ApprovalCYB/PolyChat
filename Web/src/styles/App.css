@@ -28,16 +28,17 @@ body::before {
   background: url("../assets/batthern.png") repeat;
   animation: moveStars 100s linear infinite;
   z-index: -1;
-  opacity: 1;
+  opacity: 0.5;
   pointer-events: none;
 }
 
 @keyframes moveStars {
   from {
-    transform: translate(0, 0);
+    transform: translate(-500px, -500px);
   }
 
+
   to {
-    transform: translate(-500px, -500px);
+    transform: translate(500px, 500px);
   }
 }
